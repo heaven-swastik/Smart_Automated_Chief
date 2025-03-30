@@ -1,1 +1,376 @@
-# Smart_Automated_Chief
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Automated Chief - AI-Powered Cooking Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.jpg" alt="Smart Automated Chief Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="primary-button glow" id="get-smart-chief">Get Smart Chief</button>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="tagline">Revolutionizing Cooking with AI – Smart, Fast, Effortless!</h1>
+            <p class="subtext">Meet Smart Automated Chief – your AI-powered kitchen assistant that prepares gourmet meals with zero effort. Precision cooking, intelligent meal planning, and seamless automation – all in one!</p>
+            <div class="hero-buttons">
+                <button class="primary-button glow" id="get-started">Get Started</button>
+
+                <button class="outline-button" onclick="scrollToDemo()">
+                    <i class="fas fa-play-circle"></i> Watch Demo
+                </button>
+                
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="product-render">
+                <img src="automated.png" alt="Smart Automated Chief Product">
+                <div class="glow-effect"></div>
+            </div>
+        </div>
+        <div class="particles-container" id="particles-js"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2 class="section-title">Cutting-Edge Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>AI-Driven Cooking</h3>
+                <p>Precision cooking with machine learning intelligence.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🍽</div>
+                <h3>Restaurant-Quality Meals</h3>
+                <p>Get gourmet dishes at home with zero effort.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📲</div>
+                <h3>Smartphone Integration</h3>
+                <p>Control cooking from your phone with live updates.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🥦</div>
+                <h3>Health-Focused Cooking</h3>
+                <p>Balanced nutrition and calorie tracking made easy.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast & Energy Efficient</h3>
+                <p>Optimized for speed and eco-friendly energy use.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔄</div>
+                <h3>Customizable Recipes</h3>
+                <p>Tailor every dish to your personal taste and diet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive AI Demo Section -->
+    <section id="demo-video" class="demo">
+        <h2 class="section-title">See AI in Action</h2>
+        <div class="demo-container">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-button red"></span>
+                        <span class="terminal-button yellow"></span>
+                        <span class="terminal-button green"></span>
+                    </div>
+                    <div class="terminal-title">Smart Chief Terminal</div>
+                </div>
+                <div class="terminal-content" id="terminal-content">
+                    <p><span class="prompt">$</span> <span id="text1"></span></p>
+                </div>
+            </div>
+                <!-- Video Section -->
+            <div class="demo-image">
+                <video src="HOWITWORKS.mp4" alt="Smart Chief in Action" controls loop autoplay muted playsinline></video>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps-container">
+            <div class="step" data-step="1">
+                <div class="step-number">1️⃣</div>
+                <h3>Select Your Meal</h3>
+                <p>Choose from 1000+ AI-powered recipes.</p>
+            </div>
+            <div class="step" data-step="2">
+                <div class="step-number">2️⃣</div>
+                <h3>Smart Chief Cooks</h3>
+                <p>Fully automated preparation with AI precision.</p>
+            </div>
+            <div class="step" data-step="3">
+                <div class="step-number">3️⃣</div>
+                <h3>Enjoy Your Meal</h3>
+                <p>Served hot and fresh in minutes!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials & Reviews -->
+    <section id="reviews" class="reviews">
+        <h2 class="section-title">Customer Experiences</h2>
+        <div class="rating">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p class="rating-text">5.0 Average Rating</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p class="testimonial-text">"I never thought an AI could cook this well – it's truly life-changing!"</p>
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-author">- Sarah Johnson, Tech Enthusiast</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Perfect for busy professionals like me – fast, healthy, and delicious!"</p>
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-author">- Mark Chen, Software Engineer</p>
+            </div>
+        </div>
+        <div class="video-reviews">
+            <div class="video-review">
+                <div class="video-thumbnail">
+                    <img src="machine.png" alt="Tech Review Video">
+                    
+                </div>
+                <h3>TechReviewer: "Game-Changing Kitchen AI"</h3>
+            </div>
+            <div class="video-review">
+                <div class="video-thumbnail">
+                    <img src="h1.jpg" alt="Food Critic Review">
+                    
+                </div>
+                <h3>Renowned Chef: "AI Cooking That Rivals Michelin-Star Quality!"</h3>
+            </div>
+            <div class="video-review">
+                <div class="video-thumbnail">
+                    <img src="resturant.jpg" alt="Food Critic Review">
+                    
+                </div>
+                <h3>FoodCritic: "Better Than Restaurant Quality"</h3>
+            </div>
+            
+            <div class="video-review">
+                <div class="video-thumbnail">
+                    <img src="h2.jpg" alt="Food Critic Review">
+                    
+                </div>
+                <h3>Home Cook’s Verdict: "Effortless Cooking, Restaurant-Worthy Results!"</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <h2 class="section-title">Choose Your Smart Chief</h2>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>🎯 Basic</h3>
+                    <p class="price">$299</p>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li>AI-assisted cooking</li>
+                        <li>100+ recipes</li>
+                        <li>Basic smartphone control</li>
+                        <li>1-year warranty</li>
+                    </ul>
+                </div>
+                <button class="pricing-button">Get Basic</button>
+            </div>
+            <div class="pricing-card featured">
+                <div class="pricing-header">
+                    <div class="most-popular">Most Popular</div>
+                    <h3>🚀 Pro</h3>
+                    <p class="price">$499</p>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li>Fully automated chef</li>
+                        <li>500+ recipes</li>
+                        <li>Advanced mobile control</li>
+                        <li>Custom meal scheduling</li>
+                        <li>2-year warranty</li>
+                    </ul>
+                </div>
+                <button class="pricing-button glow">Get Pro</button>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>🔥 Elite</h3>
+                    <p class="price">$799</p>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li>Premium model</li>
+                        <li>1000+ recipes</li>
+                        <li>Personalized AI recommendations</li>
+                        <li>Voice control</li>
+                        <li>Premium finish</li>
+                        <li>3-year warranty</li>
+                    </ul>
+                </div>
+                <button class="pricing-button">Get Elite</button>
+            </div>
+        </div>
+        <div class="pricing-cta">
+            <button class="cta-button glow">Get Smart Chief Now</button>
+        </div>
+    </section>
+
+    <!-- Contact & Support -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-form-container">
+                <form class="contact-form" id="contact-form">
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="" disabled selected>Select Topic</option>
+                            <option value="sales">Sales Inquiry</option>
+                            <option value="support">Technical Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button glow">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@smartchief.ai</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 (1800) SMART-CHIEF</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>New Town, University Area, Plot No. III, B/5, New Town Rd, Action Area III, Newtown, New Town, West Bengal 700160</p>
+                </div>
+            </div>
+        </div>
+        <div class="live-chat">
+            <div class="chat-icon">
+                <i class="fas fa-comment-dots"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">User Manual</a></li>
+                    <li><a href="#">Troubleshooting</a></li>
+                    <li><a href="#">Warranty</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="newsletter">
+                    <input type="email" placeholder="Subscribe to newsletter">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Smart Automated Chief. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
